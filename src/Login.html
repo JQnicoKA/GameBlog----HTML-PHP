@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="wallpaper.css"> <!on utilise le fichier css "wallpaper.css" pour la mise en forme de cette page>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>Page de connexion</h1>
+<img src="photo_default.png" height="100" width="100" >
+<form method="post" action="login_php.php">             <!--Les données récupérées sont envoyées vers la page login _Php.Php-->
+
+    <label>             <!--on demande à l'utilisateur de saisir les informations pour se connecter -->
+        <br />
+        Email : <input type="text" name="Email" required="required" placeholder="example@example.com"/>
+    </label>
+    <br />
+    <br />
+    <label>
+        Mot de passe : <input type="password" name="Mot_de_passe" required="required" />
+    </label>
+    <br />
+    <a href="forgot_password.html"> Vous avez oublié votre mot de passe ? cliquez. </a>     <!-- on dirige l'utilisateur vers une page s'il a oublié son mot de passe-->
+    <br />
+    <br />
+    <a href="Register.html"> Vous ne possedez pas de compte ? cliquez pour vous inscrire.</a>
+    <br />
+    <input type="submit" />
+
+</form>
+</body>
+</html>

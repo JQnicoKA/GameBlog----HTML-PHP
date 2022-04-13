@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="wallpaper.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="main_menu_connected2.php">      <! les informations sont envoyées dans main_menu_connected2.php >
+Recherche par &nbsp; Genre <SELECT NAME="Genre">
+    <optgroup label="Jeux vidéo">                          <! on propose à l'utilisateur d'effectuer une recherche par genre,plateforme,et pegi>
+        <OPTION VALUE="FPS"> FPS
+        <OPTION VALUE="RPG" SELECTED>RPG
+        <OPTION VALUE="Strategie">Strategie
+        <OPTION VALUE="Sport">Sport
+        <OPTION VALUE="Aventure">Aventure
+        <OPTION VALUE="Strategie">Strategie
+        <OPTION VALUE="Survie">Survie
+        <OPTION VALUE="Course">Course
+        <OPTION VALUE="Combat">Combat
+        <OPTION VALUE="Horreur">Horreur
+    </optgroup>
+    <optgroup label="Jeux de table">
+        <OPTION VALUE="Puzzle">Puzzle
+        <OPTION VALUE="Societe">Societe
+        <OPTION VALUE="Cartes">Cartes
+        <OPTION VALUE="Survie">Survie
+    </optgroup>
+</SELECT>
+&nbsp; Plateforme <Select  NAME="Plateforme">
+    <OPTION VALUE="Pc"> Pc
+    <OPTION VALUE="Xbox_one" SELECTED>Xbox One
+    <OPTION VALUE="Xbox_360">Xbox 360
+    <OPTION VALUE="Ps3">Ps3
+    <OPTION VALUE="Ps4">Ps4
+    <OPTION VALUE="Nintendo">Nintendo
+    <OPTION VALUE="Table">Table
+</Select>
+&nbsp; PEGI <Select  NAME="Pegi">
+    <OPTION VALUE="3"> 3
+    <OPTION VALUE="7" SELECTED> 7
+    <OPTION VALUE="12">12
+    <OPTION VALUE="16">16
+    <OPTION VALUE="18">18
+</Select>
+<input type="submit" />
+</form>
+</body>
+</html>

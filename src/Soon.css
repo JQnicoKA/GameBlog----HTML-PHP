@@ -1,0 +1,15 @@
+img {
+    vertical-align:middle;
+}
+#trait_dessus
+{
+    border-top: 5px solid #153da7;
+    border-bottom : 5px solid #ea581e;
+    width : 1750px;
+}
+#trait_dessus2
+{
+    border-top: 5px solid #263205;
+    border-bottom : 5px solid #815d10;
+    width : 1750px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="wallpaper.css"> <!-- on utilise le fichier css "wallpaper.css" pour la mise en forme de cette page-->
+<div Align = right >
+    <a href="main_menu_connected.html">  Retourner sur la page accueil </a>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+</head>
+<body>
+<h1>Ajouter un jeu</h1>
+<form method="post" action="add_game.php">      <!-- les informations sont envoyées ensuite vers la page add_game.php-->
+
+    <div Align = center>
+        <img src="download.png" height="125" width="125" >
+
+    </div>
+    <label>
+        nom du jeu : <input type="text" name="nom" required="required" />
+    </label>
+    <br />
+    <br />
+    <label>
+        Genre <SELECT NAME="genre">                             <!-- on demande a l'utilisateur de choisir le genre du jeu parmi une liste proposée-->
+        <optgroup label="Jeux vidéo">
+                <OPTION VALUE="FPS"> FPS
+                <OPTION VALUE="RPG" SELECTED>RPG
+                <OPTION VALUE="Strategie">Strategie
+                <OPTION VALUE="Sport">Sport
+                <OPTION VALUE="Aventure">Aventure
+                <OPTION VALUE="Strategie">Strategie
+                <OPTION VALUE="Survie">Survie
+                <OPTION VALUE="Course">Course
+                <OPTION VALUE="Combat">Combat
+                <OPTION VALUE="Horreur">Horreur
+        </optgroup>                                           <!-- on divise la liste en 2 : les jeux vidéos et les jeux de table-->
+        <optgroup label="Jeux de table">
+                <OPTION VALUE="Puzzle">Puzzle
+                <OPTION VALUE="Societe">Societe
+                <OPTION VALUE="Cartes">Cartes
+                <OPTION VALUE="Survie">Survie
+        </optgroup>
+        </SELECT>
+    </label>
+    <label>
+            <br />
+        <br />
+        Date de sortie du jeu  : <input type="date" name="release_date" required="required"/>
+    </label>
+
+    <label>
+        <br />
+        <br />
+        Plateforme <Select  NAME="Plateforme">          <!-- on demande à l'utilisateur de sélectionner la plateforme dans la liste-->
+            <OPTION VALUE="Pc"> Pc
+            <OPTION VALUE="Xbox_one" SELECTED>Xbox One
+            <OPTION VALUE="Xbox_360">Xbox 360
+            <OPTION VALUE="Ps3">Ps3
+            <OPTION VALUE="Ps4">Ps4
+            <OPTION VALUE="Nintendo">Nintendo
+            <OPTION VALUE="Table">Table
+        </Select>
+    </label>
+    <label>
+        <br />
+        <br />
+        nombre de joueurs maximum : <input type="number" min="1" max="150" name="nb_player" required="required"/>   <!-- on limite le nombre de joueurs maximum à 150-->
+    </label>
+    </label>
+    <label>
+        <br />
+        <br />
+        prix : <input type="number" name="price" required="required"/>
+    </label>
+    <label>
+        <br />
+        <br />
+        PEGI <Select  NAME="pegi">              <!--on demande de selectionner le Pegi-->
+            <OPTION VALUE="3"> 3
+            <OPTION VALUE="7" SELECTED>7
+            <OPTION VALUE="12">12
+            <OPTION VALUE="16">16
+            <OPTION VALUE="18">18
+        </Select>
+    </label>
+    <br />
+    <br />
+    <label>
+        Editeur : <input type="text" name="Editeur" required="required"/>
+    </label>
+    <input type="submit" />         <!--les informations sont envoyées -->
+</form>
+</body>
+</html>

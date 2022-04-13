@@ -1,0 +1,26 @@
+h1 {
+    padding: 10px;
+    color: #263205;
+    font-weight: bold;
+    display: block;
+    border-right: 30px solid #ec6911;
+    border-bottom: 30px solid #103bd9;
+
+}
+body {
+    font-family:arial, sans-serif;
+    font-size:100%;
+    color: #1c40c6;
+    background-color:white;
+    background-image:url(wallpaper.jpeg);
+    margin:0;
+}
+#manipulate {
+    position:absolute;
+    width:300px;
+    height:300px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}

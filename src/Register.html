@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="wallpaper.css"> <! on utilise le fichier css "wallpaper.css" pour la mise en forme de cette page>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<h1>Inscription</h1>
+<img src="you.jpg" height="200" width="200" >
+<form method="post" action="register_php.php">    <!Les données récupérées sont envoyées vers la page register _Php Php>
+    <label>
+        <br />
+        Email : <input type="text" name="Email" required="required" placeholder="example@example.com"/>  <!Dans cette partie on demande à l'utilisateur de saisir les informations pour pouvoir s'inscrire>
+    </label>
+    <br />
+    <br />
+    <label>
+        Mot de passe : <input id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Veuillez entrer au moins 6 caractères' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Mot de passe" required>  <!on demande a l'utilisateur de saisir le mot de passe avec un minimum de 6 caractères>
+    </label>
+    <br />
+    <br />
+    <label>
+        <!-- on demande de confirmer le par le même mot de passe-->
+        Confirmer le mot de passe : <input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Merci de saisir le même mot de passe' : '');" placeholder="Verification mot de passe" required>
+    </label>
+    <br />
+    <br />
+    <label>
+        Question secrète : Quel était votre meilleur ami d'enfance ? <input type="text" name="Question_secrete" required="required" />
+    </label>
+    <br />
+    <br />
+    <label>
+        Date de naissance : <input type="date" name="Date_naissance" required="required" />
+    </label>
+    <br />
+    <br />
+    <label>
+        Nom : <input type="text" name="Nom" required="required" placeholder="Dupont"/>
+    </label>
+    <br />
+    <br />
+    <label>
+        Prénom : <input type="text" name="Prenom" required="required" placeholder="Jean"/>
+    </label>
+    <br />
+    <br />
+    <label>
+        Pays : <input type="text" name="Pays" required="required" placeholder="France"/>
+    </label>
+    <br />
+    <br />
+    <label>
+        Ville : <input type="text" name="Ville" required="required" placeholder="Paris"/>
+    </label>
+    <br />
+    <br />
+    <label>
+        Genre:   <!--on demande à l'utilisateur de cocher l'un des case suivants-->
+        <br />
+        <br />
+        <input  name="Genre" type="radio" value="Homme" required="required" /> Homme
+        <br />
+        <input  name="Genre" type="radio" value="Femme" required="required" /> Femme
+        <br />
+        <input  name="Genre" type="radio" value="Non-binaire" required="required" /> Non-binaire
+    </label>
+    <br />
+    <label>
+        <br /> <!-- Ici on dirige l'utilisateur vers une page html sur laquelle se trouve le contrat d'utilisation-->
+        <a href="Contrat.html" target="_blank">Contrat: </a>  <input type="checkbox" name="contrat" value="Oui" required="required" />
+        <br />
+        <br />
+    </label>
+    <input type="submit" /> <!les informations sont envoyées >
+</form>
+</body>
+</html>
