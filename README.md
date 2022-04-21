@@ -23,6 +23,3 @@ commentaires, nous vous laissons découvrir.
 Bonne navigation sur BlablaJeux.com version béta.
 
 LECAS Nicolas
-
-CE QUE J'AI FAIT SUR CE PROJET:
-Organisation des tables de la base de données, liaisons PHP avec les requêtes SQL, Mise en place des éléments sur la fenêtre
