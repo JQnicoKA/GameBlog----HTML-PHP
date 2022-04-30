@@ -13,9 +13,9 @@ Pour accèder à notre site web, executez le fichier Login.html depuis phpstorm 
 La base de données contient déjà les informations suivantes, mais vous pouvez en ajouter autant que vous voulez.
 
 Voila les utilisateurs déjà présents dans la base de donnée :
-test@hotmail.com		mot de passe : OUICESTNOUS
-test2@hotmail.com		mot de passe : OUICESTNOUS2
-test2@hotmail.com		mot de passe : OUICESTNOUS3
+- test@hotmail.com		mot de passe : OUICESTNOUS
+- test2@hotmail.com		mot de passe : OUICESTNOUS2
+- test2@hotmail.com		mot de passe : OUICESTNOUS3
 
 Vous pourrez constater que ondine et nico sont mutuellement amis, pour ce qui est des jeux présents dans la base et des
 commentaires, nous vous laissons découvrir.
